@@ -1,26 +1,25 @@
-/* selectors for balises*/
-*{
-  font-family: 'Questrial', sans-serif;}/*selectors for balises */
-body {
-  background-image: url('./halftone.png') ;
+/*selectors for balises */
+* {
+  font-family: 'Exo', sans-serif;
 }
-main {
-  margin-top: 80px;
-  margin-bottom: 20px;
+body {
+  background-image: url('./hal.png');
+}
+header {
+
+  height: 60px;
+  background: tan;
+  border: 1px solid: #D2B48C;
 }
 
-header {
-  height: 60px;
-  background-color:tan;
-  border:
+main {
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 .full-height {
  height:100%
 }
-.full-width{
-  width:80% ;
-}
-.flex-base {
+.yoyo {
  display: flex;
  justify-content: space-around;
 }
@@ -32,39 +31,21 @@ header {
   color: black;
   text-transform: uppercase;
 }
-.base-card {
-  padding: 20px;
-  margin:20px;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  background-image: url('./vintage-concrete.png');
-}
-.link-no-style{
-  text-decoration: none;
-  color: inherit;
-
-}
-
-#logo-title {
-  font-family: 'Anton',cursive ;
-  text-transform: uppercase;
-}
 .menu-buttons>li{
-padding-left: :10px;
+padding-left:10px;
 padding-left:10px }
 
-.menu-buttons>li:hover .menu-buttons>li:hover>a {
-background-color: white;
+.menu-buttons>li:hover, .menu-buttons>li:hover>a {
+background-color: black;
 color:white;
 }
 
 .menu-buttons>li:hover{
-  background-color: white;
+  background-color: black;
   color:white;
 }
 ul.flex-center{
-  width:300px;
+  width:200px;
 }
 .no-padding-margin{
   margin: 0;
@@ -83,26 +64,46 @@ footer{
 .full-height {
  height:100%
 }
+.full-widht{
+  width:80%;
+}
+
 .flex-column {
 flex-direction: column;
 }
-.flex-row-alternate{
-  flex-direction: row-reverse;
 
+.link-no-style{
+  text-decoration: none;
+  color: inherit;
 }
-.p-base{
-  width: 650px ;
+#logo-title {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+
+.flex-row-alternance{
+  flex-direction: row-reverse;
+}
+.p-base {
+  width: 460px;
   text-align: justify;
- }
-.position-fixed {
-  position:fixed;
-  width: 100%;
-  top: 0;
 }
+
+.base-card{
+padding: 20px;
+margin: 20px;
+-webkit-box-shadow: 10px 9px 15px 6px rgba(0,0,0,1);
+-moz-box-shadow: 10px 9px 15px 6px rgba(0,0,0,1);
+box-shadow: 10px 9px 15px 6px rgba(0,0,0,1);
+background-image: url('./bak.png');
+border: 1px solid lightgray;
+}
+
 .image-container>img{
   max-width: 100%;
   height:auto;
 }
+
 .flex-base {
  display: flex;
  justify-content: space-around;
@@ -110,6 +111,13 @@ flex-direction: column;
 .flex-center{
   align-items: center;
    }
+
+.position-fixed{
+position: fixed;
+width: 100%;
+top: 0;
+  }
+
 .menu-buttons>li>a {
   text-decoration: none;
   color: black;
@@ -133,9 +141,32 @@ ul.flex-center{
 }
 .no-padding-margin{
   margin: 0;
-  padding: 0;
+  padding:0;
 }
 .list-no-style {
   list-style: none;
 
+}
+
+#game-container{
+  display: flex;
+  flex-direction: row;
+}
+
+#game-container>div {
+  width: 50px;
+  height: 50px;
+  background-color: lightgray;
+  border: 1px solid black;
+}
+
+#game-container>div:hover{
+  cursor:pointer;
+}
+
+.green-color {
+  background-color: green!important;
+}
+.red-color{
+  background-color: red!important;
 }
